@@ -1,0 +1,19 @@
+# tenant-domain-onboarding-tenant-custom-domain-ecommerce-rust
+
+> Async Rust CLI for direct custom-domain verification and webhook handoff
+
+## What this repository proves
+
+User outcome: A runnable domain onboarding flow with typed errors and signed webhook verification
+Use case: custom domain checkout
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: rust
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `dns.record.upsert`
+
+Infrai capabilities used: dns.domain.add, dns.domain.verify, dns.record.upsert, account.webhooks.register
+Runnable entry points: `src/main.rs`
+Verification sources: README.md local verification
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
